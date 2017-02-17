@@ -1,0 +1,165 @@
+
+            h1 {
+                position: relative;
+                top: 0;
+                background-image:url(tausta.png);
+                color: azure;
+                font-family: sans-serif;
+                font-size: 8vw;
+                text-align: center;
+                z-index: 2;
+                width: 100vw;
+                height: 10vw;
+                border-color: darkblue;
+                margin-left: -8px;
+                margin-right: -8px;
+                
+            }
+            nav {
+                align-content: center;
+                background-color: blue;
+                color: azure;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                border-style: none;
+                
+            }
+            
+            #NAV {
+                list-style-type: none;
+                background-color: blueviolet;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 3;
+                border-bottom-width: 5px;
+                border-style: solid;
+                border-color: floralwhite;          
+            }
+            
+        
+            #A {
+                color: azure;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                float: left;
+                width: 200px;
+                border-color: floralwhite;
+                border-width: 3px;
+                border-style: solid;
+                background-color: darkgray;
+                position: relative;
+                z-index: 3;
+                text-align: center;
+                
+            }
+            #B {
+                color: cadetblue;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                float: left;
+                 width: 200px;
+                border-color: floralwhite;
+                border-width: 3px;
+                border-style: solid;
+                position: relative;
+                z-index: 3;
+                background-color: darkgray;
+                text-align: center;
+            }
+            #C {
+                color:azure;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                float: left;
+                 width: 200px;
+                border-color: floralwhite;
+                border-width: 3px;
+                border-style: solid;
+                position: relative;
+                z-index: 3;
+                background-color: darkgray;
+                text-align: center;
+            }
+            #D {
+                color: azure;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                float: left;
+                 width: 200px;
+                border-color: floralwhite;
+                border-width: 3px;
+                border-style: solid;
+                position: relative;
+                z-index: 3;
+                background-color: darkgray;
+                text-align: center;
+            }
+            footer {
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width: 100vw;
+                height: 100px;
+                margin-left: -8px;
+                margin-right: -8px;
+                color: azure;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-decoration: none;
+                z-index: 3;
+                border-style: none;
+                background-image: url(tausta.png)
+                    
+            }
+            #juttu {
+                margin: auto;
+                position: relative;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                color: black;
+                width: 34vw;
+                z-index: 3;
+                background-image: url(filtteri.png);
+                -moz-border-radius: 50px;
+	           -webkit-border-radius: 50px;
+	           border-radius: 50px;
+                height: 26vw;
+                font-size: 1vw;
+                
+                
+                
+	
+	
+                
+            }
+            #bg {
+                position: fixed; 
+                top: -50%; 
+                left: -50%; 
+                width: 200%; 
+                height: 200%;
+                z-index: -1;
+                
+                }
+            #bg img {
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                right: 0; 
+                bottom: 0; 
+                margin: auto; 
+                min-width: 50%;
+                min-height: 50%;
+                z-index: -1;
+                
+                }
+        

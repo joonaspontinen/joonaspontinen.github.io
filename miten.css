@@ -153,9 +153,10 @@
             }
             #video{
                 position: absolute;
-                top: 50vh;
+                top: 40vh;
                 right: 0;
                 z-index: 4;
+                height: 20
             }
             #bg {
                 position: fixed; 

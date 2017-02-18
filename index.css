@@ -119,12 +119,6 @@
                 background-image: url(tausta.png)
                     
             }
-            #sos    {
-                float: left;
-            }
-            #sosteksti{
-                float: left;
-            }
             #juttu {
                 margin: auto;
                 position: relative;

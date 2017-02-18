@@ -11,8 +11,7 @@
                 width: 100vw;
                 height: 10vw;
                 border-color: darkblue;
-                margin-left: -8px;
-                margin-right: -8px;
+          
                 
             }
             nav {
@@ -110,8 +109,6 @@
                 bottom: 0;
                 width: 100vw;
                 height: 100px;
-                margin-left: -8px;
-                margin-right: -8px;
                 color: azure;
                 font-size: 30px;
                 font-family: sans-serif;

@@ -11,6 +11,8 @@
                 width: 100vw;
                 height: 10vw;
                 border-color: darkblue;
+                margin-left: -8px;
+                margin-right: -8px;
                 
             }
             nav {
@@ -27,12 +29,12 @@
             #NAV {
                 list-style-type: none;
                 background-color: blueviolet;
-                position: static;
+                margin: auto;
+                position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 z-index: 3;
-                width: 100vw;
                 border-bottom-width: 5px;
                 border-style: solid;
                 border-color: floralwhite;          
@@ -106,6 +108,8 @@
                 bottom: 0;
                 width: 100vw;
                 height: 100px;
+                margin-left: -8px;
+                margin-right: -8px;
                 color: azure;
                 font-size: 30px;
                 font-family: sans-serif;

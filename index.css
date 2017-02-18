@@ -27,12 +27,12 @@
             #NAV {
                 list-style-type: none;
                 background-color: blueviolet;
-                margin: auto;
-                position: absolute;
+                position: static;
                 top: 0;
                 left: 0;
                 right: 0;
                 z-index: 3;
+                width: 100vw;
                 border-bottom-width: 5px;
                 border-style: solid;
                 border-color: floralwhite;          

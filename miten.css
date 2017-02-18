@@ -160,11 +160,12 @@
             }
             #kala{
                  position: absolute;
-                top: 40vh;
+                top: 30vh;
                 right: 5vw;
                 z-index: 4;
                 color: aliceblue;
                 background-color: blue;
+                height: 10vh;
             }
             #bg {
                 position: fixed; 

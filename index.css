@@ -119,6 +119,11 @@
                 background-image: url(tausta.png)
                     
             }
+
+            #sos{
+                width: 50px;
+                height: 25px;
+            }
             #juttu {
                 margin: auto;
                 position: relative;

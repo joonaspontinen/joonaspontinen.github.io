@@ -168,6 +168,8 @@
                 background-color: blue;
                 height: 10vh;
                 width: 25vw;
+                font-size: 30px;
+                overflow: hidden;
                 
             }
             #bg {

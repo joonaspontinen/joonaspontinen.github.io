@@ -103,11 +103,13 @@
                 text-align: center;
             }
             footer {
-                text-align: center;
-                position: static;
+             text-align: center;
+                position: absolute;
                 bottom: 0;
                 width: 100vw;
                 height: 100px;
+                margin-left: -8px;
+                margin-right: -8px;
                 color: azure;
                 font-size: 30px;
                 font-family: sans-serif;
@@ -115,7 +117,6 @@
                 z-index: 3;
                 border-style: none;
                 background-image: url(tausta.png)
-                    
             }
 
             #sos{

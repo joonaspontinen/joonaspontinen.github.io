@@ -170,7 +170,7 @@
                 width: calc(25vw + 4px);
                 font-size: 30px;
                 overflow: hidden;
-                
+                text-align: center;
             }
             #bg {
                 position: fixed; 

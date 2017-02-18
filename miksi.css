@@ -60,7 +60,7 @@
                 
             }
             #B {
-                color: cadetblue;
+                color: azure;
                 font-size: 30px;
                 font-family: sans-serif;
                 text-decoration: none;
@@ -71,7 +71,7 @@
                 border-style: solid;
                 position: relative;
                 z-index: 3;
-                background-color: darkgray;
+                background-color: blue;
                 text-align: center;
             }
             #C {

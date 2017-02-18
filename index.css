@@ -46,7 +46,7 @@
             
         
             #A {
-                color: cadetblue;
+                color: azure;
                 font-size: 30px;
                 font-family: sans-serif;
                 text-decoration: none;
@@ -55,7 +55,7 @@
                 border-color: floralwhite;
                 border-width: 3px;
                 border-style: solid;
-                background-color: darkgray;
+                background-color: blue;
                 position: relative;
                 z-index: 3;
                 text-align: center;

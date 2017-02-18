@@ -164,8 +164,8 @@
                 top: 30vh;
                 right: 5vw;
                 z-index: 4;
-                color: aliceblue;
-                background-color: blue;
+                color: azure;
+                background-image: url(tausta.png);
                 height: 10vh;
                 width: calc(25vw + 4px);
                 font-size: 30px;

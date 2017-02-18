@@ -156,7 +156,15 @@
                 top: 40vh;
                 right: 5vw;
                 z-index: 4;
-                height: 20
+                
+            }
+            #kala{
+                 position: absolute;
+                top: 40vh;
+                right: 5vw;
+                z-index: 4;
+                color: aliceblue;
+                background-color: blue;
             }
             #bg {
                 position: fixed; 

@@ -156,6 +156,7 @@
                 top: 40vh;
                 right: 5vw;
                 z-index: 4;
+                width: 10vw;
                 
             }
             #kala{
@@ -166,6 +167,8 @@
                 color: aliceblue;
                 background-color: blue;
                 height: 10vh;
+                width: 10vw;
+                
             }
             #bg {
                 position: fixed; 

@@ -134,11 +134,15 @@
 	           border-radius: 50px;
                 height: 26vw;
                 font-size: .7vw;
-                
-                
-                
-	
-	
+                    
+            }
+            #sos{
+                width: 200px;
+                height: 100px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 4;
                 
             }
             #bg {

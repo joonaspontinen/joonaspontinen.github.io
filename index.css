@@ -121,8 +121,13 @@
             }
 
             #sos{
-                width: 50px;
-                height: 25px;
+                width: 200px;
+                height: 100px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 4;
+                
             }
             #juttu {
                 margin: auto;

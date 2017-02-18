@@ -25,7 +25,9 @@
                 border-style: none;
                 
             }
-            
+              header {
+            height: 25vh;    
+            }
             #NAV {
                 list-style-type: none;
                 background-color: blueviolet;

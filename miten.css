@@ -167,7 +167,7 @@
                 color: aliceblue;
                 background-color: blue;
                 height: 10vh;
-                width: calc(25vw + 8px);
+                width: calc(25vw + 4px);
                 font-size: 30px;
                 overflow: hidden;
                 

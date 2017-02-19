@@ -54,7 +54,7 @@
                 border-color: floralwhite;
                 border-width: 3px;
                 border-style: solid;
-                background-color: blue;
+                background-color: darkgray;
                 position: relative;
                 z-index: 3;
                 text-align: center;
@@ -102,7 +102,7 @@
                 border-style: solid;
                 position: relative;
                 z-index: 3;
-                background-color: darkgray;
+                background-color: blue;
                 text-align: center;
             }
             footer {

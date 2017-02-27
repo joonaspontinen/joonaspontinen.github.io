@@ -11,3 +11,16 @@ function compareNumbers(first, second) {
     'use strict';
     return Boolean(first === second);
 }
+function Guess(target) {
+    'use strict';
+    if (compareNumbers(target, correctNumber)) {
+        
+    } else {
+        
+        if (target > 0 && target < 11) {
+            
+        } else {
+            window.alert("Please choose a number between 1 and 10");
+        }
+    }
+}

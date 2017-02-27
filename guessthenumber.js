@@ -24,6 +24,7 @@ function Guess() {
     'use strict';
     if (compareNumbers(document.getElementById("numero").value, correctNumber)) {
         window.alert("You win");
+        setRandomnumber();
     } else {
         
         if (document.getElementById("numero").value > 0 && document.getElementById("numero").value < 11) {

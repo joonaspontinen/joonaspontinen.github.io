@@ -15,7 +15,7 @@ window.onload = setRandomnumber();
 
 function compareNumbers(first, second) {
     'use strict';
-    return Boolean(first === second);
+    return Boolean(first == second);
 }
 
 

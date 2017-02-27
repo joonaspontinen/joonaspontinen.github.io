@@ -11,6 +11,9 @@ function compareNumbers(first, second) {
     'use strict';
     return Boolean(first === second);
 }
+
+
+
 function Guess() {
     'use strict';
     if (compareNumbers(document.getElementById("numero").value, correctNumber)) {

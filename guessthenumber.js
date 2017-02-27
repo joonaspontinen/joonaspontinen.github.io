@@ -5,7 +5,13 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var correctNumber = getRandomInt(1, 10);
+var correctNumber = 5;
+
+function setRandomnumber() {
+    'use strict';
+    correctNumber = getRandomInt(1, 10);
+}
+window.onload = setRandomnumber();
 
 function compareNumbers(first, second) {
     'use strict';

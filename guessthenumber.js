@@ -11,13 +11,13 @@ function compareNumbers(first, second) {
     'use strict';
     return Boolean(first === second);
 }
-function Guess(target) {
+function Guess() {
     'use strict';
-    if (compareNumbers(target, correctNumber)) {
+    if (compareNumbers(document.getElementById("numero").value, correctNumber)) {
         window.alert("You win");
     } else {
         
-        if (target > 0 && target < 11) {
+        if (document.getElementById("numero").value > 0 && document.getElementById("numero").value < 11) {
             window.alert("Wrong");
         } else {
             window.alert("Please choose a number between 1 and 10");

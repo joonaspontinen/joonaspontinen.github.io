@@ -50,8 +50,6 @@ function stopSlide() {
 function changeArticle() {
     'use strict';
     while (keepScrolling) {
-        setInterval(function () {
-            nextSlide();
-        }, 1000);
+        setInterval(nextSlide(), 3000);
     }
 }

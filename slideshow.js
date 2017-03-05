@@ -3,8 +3,11 @@
 var index = 0;
 var keepScrolling = true;
 
+
+
 window.onload = function () {
     'use strict';
+    
     $.getJSON("pontinj1-589288.firebaseio.com/.json", function (data) {
         console.log(data);
         $('#otsikko').html(data.uutiset[index].otsikko);
@@ -49,7 +52,7 @@ function stopSlide() {
 
 function changeArticle() {
     'use strict';
-    while (keepScrolling) {
+    if (keepScrolling) {
         setInterval(nextSlide(), 3000);
     }
 }

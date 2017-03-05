@@ -3,13 +3,9 @@
 var index = 0;
 var keepScrolling = true;
 
-
-
-
-
 function display() {
     'use strict';
-    $.getJSON("pontinj1-589288.firebaseio.com/.json", function (data) {
+    $.getJSON("https://pontinj1-589288.firebaseio.com/.json", function (data) {
         $('#otsikko').html(data.uutiset[index].otsikko);
         $('#paivamaara').html(data.uutiset[index].paivamaara);
         $('#sisalto').html(data.uutiset[index].sisalto);

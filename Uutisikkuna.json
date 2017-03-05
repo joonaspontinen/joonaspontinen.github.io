@@ -1,0 +1,25 @@
+{
+    "uutiset": [
+
+        {
+            "otsikko": "Elementti 1",
+            "sisalto": "Sisältö 1",
+            "paivamaara": "23.1"
+            },
+        {
+            "otsikko": "Elementti 2",
+            "sisalto": "Sisältö 2",
+            "paivamaara": "3.1"
+            },
+
+
+        {
+            "otsikko": "Elementti 3",
+            "sisalto": "Sisältö 3",
+            "paivamaara": "2.1"
+            }
+        
+
+        ]
+
+}

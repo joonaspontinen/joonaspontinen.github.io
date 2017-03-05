@@ -41,7 +41,7 @@ function stopSlide() {
 
 function changeArticle() {
     'use strict';
-    setInterval(nextSlide(), 10);
+    setInterval(nextSlide, 1000);
     
 }
 

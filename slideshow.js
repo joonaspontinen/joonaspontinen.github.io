@@ -5,14 +5,7 @@ var keepScrolling = true;
 
 
 
-window.onload = function () {
-    'use strict';
-    
-    $.getJSON("pontinj1-589288.firebaseio.com/.json", function (data) {
-        console.log(data);
-        $('#otsikko').html(data.uutiset[index].otsikko);
-    });
-};
+
 
 function display() {
     'use strict';
@@ -56,3 +49,10 @@ function changeArticle() {
         setInterval(nextSlide(), 3000);
     }
 }
+
+window.onload = function () {
+    'use strict';
+    display();
+    nextSlide();
+    changeArticle();
+};

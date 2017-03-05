@@ -42,7 +42,7 @@ function stopSlide() {
 function changeArticle() {
     'use strict';
     if (keepScrolling) {
-        setInterval(nextSlide(), 3000);
+        setInterval(nextSlide(), 10);
     }
 }
 

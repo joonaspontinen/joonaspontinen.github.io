@@ -177,6 +177,7 @@
 
             #Uutisikkuna {
                 position: relative;
+                margin: auto;
                 z-index: 10;
             }
         

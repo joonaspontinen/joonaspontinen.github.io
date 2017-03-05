@@ -41,9 +41,8 @@ function stopSlide() {
 
 function changeArticle() {
     'use strict';
-    if (keepScrolling) {
-        setInterval(nextSlide(), 10);
-    }
+    setInterval(nextSlide(), 10);
+    
 }
 
 window.onload = function () {

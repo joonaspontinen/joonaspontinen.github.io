@@ -1,6 +1,6 @@
 
 
-var index = localStorage.getItem('article');
+var index = 0;
 var keepScrolling = true;
 
 function saveNumberOfArticle() {
@@ -70,6 +70,7 @@ function changeArticle() {
 
 window.onload = function () {
     'use strict';
+    index = localStorage.getItem('article').toNumber;
     display();
     nextSlide();
     changeArticle();

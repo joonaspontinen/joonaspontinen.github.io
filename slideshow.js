@@ -11,6 +11,7 @@ function saveNumberOfArticle() {
 
 function display() {
     'use strict';
+    index = localStorage.getItem('artickle');
     $.getJSON("https://pontinj1-589288.firebaseio.com/.json", function (data) {
         $('#otsikko').html(data.uutiset[index].otsikko);
         $('#sisalto').html(data.uutiset[index].sisalto);
@@ -70,7 +71,6 @@ function changeArticle() {
 
 window.onload = function () {
     'use strict';
-    index = localStorage.getItem('artickle');
     display();
     nextSlide();
     changeArticle();

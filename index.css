@@ -180,10 +180,22 @@
                 z-index: 10;
                 background-color: darkgray;
             }
-            #pause/resume {
-                border-radius: 50%;
-                background-color: red;
-            }
+            #pause {
+                    height: 100px;
+                    width: 100px;
+                    position: relative;
+                    margin: 50px;
+                    color: white;
+                    text-align: center;
+                    line-height: 100px;
+  
+                    -webkit-border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    border-radius: 100px;
+                    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+                    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+                }
         
         
         

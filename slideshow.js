@@ -1,6 +1,6 @@
 
 
-var index = parseInt('localStorage.getItem('article')');
+var index = parseInt(localStorage.getItem('article'), 10);
 var keepScrolling = true;
 
 function saveNumberOfArticle() {

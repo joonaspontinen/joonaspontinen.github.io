@@ -183,7 +183,6 @@
             #pause {
                     height: 50px;
                     width: 50px;
-                    float: left;
                     color: white;
                     text-align: center;
                     line-height: 50px;
@@ -199,10 +198,32 @@
                 #prev{
                     height: 50px;
                     width: 50px;
+                    color: white;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color: blue;
+  
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    border-radius: 25px;
+                    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+                    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
                     }
                 #next{
-                    height: 50px;
+                   height: 50px;
                     width: 50px;
+                    color: white;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color: blue;
+  
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    border-radius: 25px;
+                    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+                    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
                     }
         
         

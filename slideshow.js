@@ -7,6 +7,7 @@ function saveNumberOfArticle() {
     'use strict';
     localStorage.setItem('article', index);
     console.log( index );
+    console.log( localStorage.getItem('article') );
 }
 
 function display() {

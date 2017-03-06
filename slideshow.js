@@ -74,6 +74,5 @@ function changeArticle() {
 window.onload = function () {
     'use strict';
     display();
-    nextSlide();
     changeArticle();
 };

@@ -42,13 +42,13 @@ function stopSlide() {
         {
             clearInterval(time);
             keepScrolling = !keepScrolling;
-            document.getElementById("pause").text = "play";
+            $("#pause").text = "play";
         }
         else {
             time = setInterval(nextSlide, 1000);
             time;
             keepScrolling = !keepScrolling; 
-            document.getElementById("myButton1").text = "||";
+            $("#pause").text = "||";
         }
     
     

@@ -187,7 +187,7 @@
                     text-align: center;
                     line-height: 50px;
                     background-color: firebrick;
-  
+                    float: left;
                     -webkit-border-radius: 25px;
                     -moz-border-radius: 25px;
                     border-radius: 25px;
@@ -202,7 +202,7 @@
                     text-align: center;
                     line-height: 50px;
                     background-color: blue;
-  
+                    float: left;
                     -webkit-border-radius: 25px;
                     -moz-border-radius: 25px;
                     border-radius: 25px;

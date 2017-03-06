@@ -29,7 +29,7 @@ function nextSlide() {
         index = 0;
         display();
     }
-    saveNumberOfArticle();
+    
 }
 
 function previousSlide() {
@@ -41,7 +41,7 @@ function previousSlide() {
         index = 2;
         display();
     }
-    saveNumberOfArticle();
+    
 }
 
 var time = setInterval(nextSlide, 2000);

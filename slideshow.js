@@ -4,10 +4,10 @@ var index = localStorage.getItem('article');
 var keepScrolling = true;
 
 function saveNumberOfArticle() {
-    'use strict';
-    localStorage.setItem('article', index);
     console.log( index );
-    console.log( localStorage.getItem('article') );
+    localStorage.setItem('article', index);
+    
+    
 }
 
 function display() {
@@ -18,6 +18,7 @@ function display() {
         $('#sisalto').html(data.uutiset[index].sisalto);
         $('#paivamaara').html(data.uutiset[index].paivamaara);
     });
+    saveNumberOfArticle();
 }
 
 function nextSlide() {

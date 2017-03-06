@@ -40,13 +40,15 @@ function stopSlide() {
     'use strict';
     if (keepScrolling)
         {
-        clearInterval(time)
+            clearInterval(time);
+            keepScrolling = !keepScrolling;
         }
-    else{
-        time; 
-    }
+        else {
+            time;
+            keepScrolling = !keepScrolling;
+        }
     
-    keepScrolling = !keepScrolling;
+    
 }
 
 function changeArticle() {

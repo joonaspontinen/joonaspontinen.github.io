@@ -4,10 +4,15 @@ var index = parseInt(localStorage.getItem('article'), 10);
 var keepScrolling = true;
 
 function saveNumberOfArticle() {
-    console.log( index );
+    console.log(index);
     localStorage.setItem('article', index);
     
     
+}
+
+function animation(){
+    'use strict';
+    $('Uutisikkuna').effect('shake', { times:3 }, 200);
 }
 
 function display() {
@@ -20,7 +25,7 @@ function display() {
         
     });
     saveNumberOfArticle();
-    $('#Uutisikkuna').effect('shake', { times:3 }, 200);
+    animation();
 }
 
 function nextSlide() {

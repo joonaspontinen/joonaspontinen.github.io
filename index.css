@@ -178,7 +178,7 @@
             #Uutisikkuna {
                 position: relative;
                 z-index: 10;
-                background-image: url(filtteri.png);
+                background-color: azure;
                 border-width: 3px;
                 border-color: blue;
             }

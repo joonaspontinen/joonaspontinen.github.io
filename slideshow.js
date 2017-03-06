@@ -3,6 +3,15 @@
 var index = 0;
 var keepScrolling = true;
 
+function saveNumberOfArticle() {
+    'use strict';
+    localStorage.setItem('article', index);
+}
+
+function setArticleAgain() {
+    'use strict';
+    index = localStorage.getItem('article');
+}
 function display() {
     'use strict';
     $.getJSON("https://pontinj1-589288.firebaseio.com/.json", function (data) {
@@ -21,6 +30,7 @@ function nextSlide() {
         index = 0;
         display();
     }
+    saveNumberOfArticle();
 }
 
 function previousSlide() {
@@ -32,6 +42,7 @@ function previousSlide() {
         index = 2;
         display();
     }
+    saveNumberOfArticle();
 }
 
 var time = setInterval(nextSlide, 1000);
@@ -62,6 +73,7 @@ function changeArticle() {
 
 window.onload = function () {
     'use strict';
+    setArticleAgain();
     display();
     nextSlide();
     changeArticle();

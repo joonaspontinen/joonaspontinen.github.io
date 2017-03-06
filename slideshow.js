@@ -7,8 +7,8 @@ function display() {
     'use strict';
     $.getJSON("https://pontinj1-589288.firebaseio.com/.json", function (data) {
         $('#otsikko').html(data.uutiset[index].otsikko);
-        $('#paivamaara').html(data.uutiset[index].paivamaara);
         $('#sisalto').html(data.uutiset[index].sisalto);
+        $('#paivamaara').html(data.uutiset[index].paivamaara);
     });
 }
 
@@ -34,14 +34,24 @@ function previousSlide() {
     }
 }
 
+var time = setInterval(nextSlide, 1000);
+
 function stopSlide() {
     'use strict';
+    if (keepScrolling)
+        {
+        clearInterval(time)
+        }
+    else{
+        time; 
+    }
+    
     keepScrolling = !keepScrolling;
 }
 
 function changeArticle() {
     'use strict';
-    setInterval(nextSlide, 1000);
+    time;
     
 }
 

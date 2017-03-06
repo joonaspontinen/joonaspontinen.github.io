@@ -12,8 +12,8 @@ function saveNumberOfArticle() {
 
 function display() {
     'use strict';
-    saveNumberOfArticle()
     $.getJSON("https://pontinj1-589288.firebaseio.com/.json", function (data) {
+        console.log(data)
         $('#otsikko').html(data.uutiset[index].otsikko);
         $('#sisalto').html(data.uutiset[index].sisalto);
         $('#paivamaara').html(data.uutiset[index].paivamaara);

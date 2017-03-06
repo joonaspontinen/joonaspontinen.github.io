@@ -17,6 +17,7 @@ function display() {
         $('#otsikko').html(data.uutiset[index].otsikko);
         $('#sisalto').html(data.uutiset[index].sisalto);
         $('#paivamaara').html(data.uutiset[index].paivamaara);
+        $('#Uutisikkuna').effect('shake', { times:3 }, 200);
     });
     saveNumberOfArticle();
 }

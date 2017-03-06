@@ -183,6 +183,7 @@
             #pause {
                     height: 50px;
                     width: 50px;
+                    float: left;
                     color: white;
                     text-align: center;
                     line-height: 50px;

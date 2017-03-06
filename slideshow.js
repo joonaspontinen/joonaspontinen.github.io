@@ -44,6 +44,7 @@ function stopSlide() {
             keepScrolling = !keepScrolling;
         }
         else {
+            time = setInterval(nextSlide, 1000);
             time;
             keepScrolling = !keepScrolling;
         }

@@ -71,7 +71,7 @@ function changeArticle() {
 
 window.onload = function () {
     'use strict';
-    index = localStorage.getItem('article').toNumber;
+    index = localStorage.getItem('article');
     display();
     nextSlide();
     changeArticle();

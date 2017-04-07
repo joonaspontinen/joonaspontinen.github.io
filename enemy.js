@@ -30,7 +30,7 @@ function moveEnemy(enemy) {
 
 function create() {
                 
-    var newEnemy = new enemy();
+    var newEnemy = new enemy;
     newEnemy.x = rand.nextInt((380+1) - 20) + 20;							// satunnaisuus
     newEnemy.y = rand.nextInt((380+1) - 20) + 20;							// satunnaisuus
     enemies += newEnemy;  

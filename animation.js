@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    var canvas = document.createElement('myCanvas');
+$(document).ready(function () {
+    var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     canvas.width = 400;
     canvas.height = 400;
@@ -13,20 +13,6 @@ $(document).ready(function(){
     drawPlayer(ctx);
     };
     
-    function update(){
-        if(38 in keysDown){
-            movePlayer('up');
-        }
-        if(40 in keysDown){
-            movePlayer('down');
-        }
-        if(37 in keysDown){
-            movePlayer('left');
-        }
-        if(39 in keysDown){
-            movePlayer('right');
-        }
-    };
     
     function main(){
         update();

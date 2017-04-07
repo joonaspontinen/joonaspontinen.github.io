@@ -6,18 +6,10 @@ $(document).ready(function () {
     document.body.appendChild(canvas);
     
     
-    var render = function(){
-    ctx.fillStyle = '#000000';
-    ctx.fillRect(0,0,400,400);
     
-    drawPlayer(ctx);
-    };
-    
-    
-    function main(){
+      function main(){
         update();
-        render();
+        drawPlayer(ctx);
         requestAnimationFrame(main);
     }
     main();
-                      }

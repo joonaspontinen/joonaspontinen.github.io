@@ -97,12 +97,8 @@ var update = function (modifier) {
 	}
 
 	// Are they touching?
-	if (
-		hero.x <= (monster.x + 20)
-		&& monster.x <= (hero.x + 20)
-		&& hero.y <= (monster.y + 20)
-		&& monster.y <= (hero.y + 20)
-	) {
+	if (monster.x <=(hero.x+20) && monster.x> (hero.x - 20) && monster.y <= (hero.y + 20)&&monster.y>(hero.y-20))
+		 {
 
 		if (monster.suunta1) {
         
@@ -126,11 +122,11 @@ var render = function () {
 	}
 
 	if (heroReady) {
-		ctx.drawImage(heroImage, hero.x, hero.y);
+		ctx.drawImage(heroImage, (hero.x - 20), (hero.y - 20));
 	}
 
 	if (monsterReady) {
-		ctx.drawImage(monsterImage, monster.x, monster.y);
+		ctx.drawImage(monsterImage, (monster.x - 20), (monster.y - 20));
 	}
 
 

@@ -33,7 +33,7 @@ $(document).ready(function () {
     var enemies = Array;
     
     function createEnemy() {
-        enemies.push(newEnemy);
+        enemies.add;
         a += 20;
     }
     createEnemy();

@@ -1,7 +1,7 @@
 // Create the canvas
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
-canvas.width = 500;
+canvas.width = 400;
 canvas.height = 400;
 document.body.appendChild(canvas);
 
@@ -11,7 +11,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "pelibg";
+bgImage.src = "pelibg.jpg";
 
 // Hero image
 var heroReady = false;
@@ -34,7 +34,7 @@ var hero = {
 	speed: 256 // movement in pixels per second
 };
 var monster = {};
-var monstersCaught = 0;
+
 
 // Handle keyboard controls
 var keysDown = {};
@@ -98,12 +98,7 @@ var render = function () {
 		ctx.drawImage(monsterImage, monster.x, monster.y);
 	}
 
-	// Score
-	ctx.fillStyle = "rgb(250, 250, 250)";
-	ctx.font = "24px Helvetica";
-	ctx.textAlign = "left";
-	ctx.textBaseline = "top";
-	ctx.fillText("Goblins caught: " + monstersCaught, 32, 32);
+
 };
 
 // The main game loop

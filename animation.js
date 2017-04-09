@@ -68,7 +68,7 @@ $(document).ready(function () {
     }
     
     var render = function () {
-            ctx.fillStyle = '#000000';
+            
             ctx.drawImage(bg, 0, 0);
     
             drawPlayer(ctx);

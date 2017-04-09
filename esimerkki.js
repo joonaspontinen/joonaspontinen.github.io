@@ -104,15 +104,15 @@ var update = function (modifier) {
 		&& monster.y <= (hero.y + 20)
 	) {
 
-		if (target.suunta1) {
+		if (monster.suunta1) {
         
-            target.suunta1 = false;
-            target.suunta2 = true;
+            monster.suunta1 = false;
+            monster.suunta2 = true;
             
     }
-    if (target.suunta2) {
-            target.suunta1 = true;
-            target.suunta2 = false;
+    if (monster.suunta2) {
+            monster.suunta1 = true;
+            monster.suunta2 = false;
             
     }
         

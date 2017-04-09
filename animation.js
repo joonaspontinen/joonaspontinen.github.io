@@ -19,7 +19,7 @@ $(document).ready(function () {
     img.src = 'pokemon.PNG';
     
     var bg = new Image();
-    img.src = 'pelibg.jpeg';
+    img.src = 'pelibg.jpg';
     
     var keysDown = {};
     

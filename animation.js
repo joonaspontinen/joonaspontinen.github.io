@@ -57,8 +57,8 @@ $(document).ready(function() {
         var x = player.x - (player.w/2);
         var y = player.y - (player.h/2);
         var pelaaja = new Image();
-            pelaaja.src ="assets/hero.png";
-            context.drawImage(pelaaja, x, y);
+        pelaaja.src ="sosmed.jpg";
+        context.drawImage(pelaaja, x, y);
     };
     
     var render = function() {

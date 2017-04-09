@@ -33,7 +33,9 @@ monsterImage.src = "pokemon.PNG";
 var hero = {
 	speed: 256 // movement in pixels per second
 };
-var monster = {};
+var monster = {
+    speed: 3
+};
 
 
 // Handle keyboard controls
@@ -59,6 +61,8 @@ var reset = function () {
 
 // Update game objects
 var update = function (modifier) {
+    
+    moveEnemy(monster)
 	if (38 in keysDown) { // Player holding up
 		hero.y -= hero.speed * modifier;
 	}
@@ -74,10 +78,10 @@ var update = function (modifier) {
 
 	// Are they touching?
 	if (
-		hero.x <= (monster.x + 32)
-		&& monster.x <= (hero.x + 32)
-		&& hero.y <= (monster.y + 32)
-		&& monster.y <= (hero.y + 32)
+		hero.x <= (monster.x + 20)
+		&& monster.x <= (hero.x + 20)
+		&& hero.y <= (monster.y + 20)
+		&& monster.y <= (hero.y + 20)
 	) {
 
 		reset();
@@ -121,5 +125,23 @@ requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 
 // Let's play this game!
 var then = Date.now();
+
+ function moveEnemy(target) {
+                
+    if (target.suunta1) {
+        target.x += 20;
+        if (target.x > 380) {
+            target.suunta1 = false;
+            target.suunta2 = true;
+            }
+    }
+    if (target.suunta2) {
+        target.x -= 20;
+        if (target.x < 20) {
+            target.suunta1 = true;
+            target.suunta2 = false;
+            }
+    }
+    }
 reset();
 main();

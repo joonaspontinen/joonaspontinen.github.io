@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     
     
-    var NewEnemy = {
+    var newEnemy = {
 		x: a,
 		y: a,
         w: 40,
@@ -33,7 +33,7 @@ $(document).ready(function () {
     var enemies = Array;
     
     function createEnemy() {
-        enemies += new NewEnemy();
+        enemies += newEnemy();
         a += 20;
     }
     createEnemy();

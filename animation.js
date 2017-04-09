@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     };
     
-    var enemies = Array;
+    ArrayList < newEnemy > enemies = new ArrayList()<newEnemy>();
     
     function createEnemy() {
         enemies.add(newEnemy);

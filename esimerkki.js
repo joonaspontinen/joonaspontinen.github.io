@@ -31,7 +31,7 @@ monsterImage.src = "pokemon.PNG";
 
 // Game objects
 var hero = {
-	speed: 256 // movement in pixels per second
+	speed: 10
 };
 var monster = {
     speed: 0.5,

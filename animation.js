@@ -61,20 +61,20 @@ $(document).ready(function () {
         }
     }
     
-    function moveEnemy(enemy) {
+    function moveEnemy(target) {
                 
-    if (this.suunta1) {
+    if (target.suunta1) {
         enemy.x += 20;
         if (enemy.x > 380) {
-            this.suunta1 = false;
-            this.suunta2 = true;
+            target.suunta1 = false;
+            target.suunta2 = true;
             }
     }
-    if (this.suunta2) {
+    if (target.suunta2) {
         enemy.x -= 20;
         if (enemy.x < 20) {
-            this.suunta1 = true;
-            this.suunta2 = false;
+            target.suunta1 = true;
+            target.suunta2 = false;
             }
     }
     }

@@ -99,6 +99,11 @@ var update = function (modifier) {
 	// Are they touching?
 	if (monster.x <=(hero.x+20) && monster.x> (hero.x - 20) && monster.y <= (hero.y + 20)&&monster.y>(hero.y-20))
 		 {
+             if (monster.suunta2) {
+            monster.suunta1 = true;
+            monster.suunta2 = false;
+            
+    }
 
 		if (monster.suunta1) {
         
@@ -106,11 +111,7 @@ var update = function (modifier) {
             monster.suunta2 = true;
             
     }
-    if (monster.suunta2) {
-            monster.suunta1 = true;
-            monster.suunta2 = false;
-            
-    }
+    
         
 	}
 };

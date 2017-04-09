@@ -34,7 +34,7 @@ var hero = {
 	speed: 256 // movement in pixels per second
 };
 var monster = {
-    speed: 2,
+    speed: 0.5,
     suunta1: true,
     suunta2: false
 };
@@ -77,24 +77,56 @@ var reset = function () {
 	monster.x = 32 + (Math.random() * (canvas.width - 64));
 	monster.y = 32 + (Math.random() * (canvas.height - 64));
 };
+ function movePlayer(direction) {
+        switch (direction) {
+        case "left":
+            player.x -= player.speed;
+            if (player.x < 20) {
+                player.x = 20;
+            }
+            break;
+        case "right":
+            player.x += player.speed;
+            if (player.x > 380) {
+                player.x = 380;
+            }
+            break;
+        case "up":
+            player.y -= player.speed;
+            if (player.y < 20) {
+                player.y = 20;
+            }
+                
+            break;
+        case "down":
+            player.y += player.speed;
+            if (player.y > 380) {
+                player.y = 380;
+            }
+            break;
+        }
+    }
 
 // Update game objects
 var update = function (modifier) {
     
     moveEnemy(monster);
     
-	if (38 in keysDown) { // Player holding up
-		hero.y -= hero.speed * modifier;
-	}
-	if (40 in keysDown) { // Player holding down
-		hero.y += hero.speed * modifier;
-	}
-	if (37 in keysDown) { // Player holding left
-		hero.x -= hero.speed * modifier;
-	}
-	if (39 in keysDown) { // Player holding right
-		hero.x += hero.speed * modifier;
-	}
+     if (38 in keysDown) {
+            movePlayer('up');
+            
+        }
+        if (40 in keysDown) {
+            movePlayer('down');
+            
+        }
+        if (37 in keysDown) {
+            movePlayer('left');
+        }
+        if (39 in keysDown) {
+            movePlayer('right');
+        }
+	
 
 	// Are they touching?
 	if (monster.x <=(hero.x+20) && monster.x> (hero.x - 20) && monster.y <= (hero.y + 20)&&monster.y>(hero.y-20))

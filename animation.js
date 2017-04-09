@@ -16,7 +16,7 @@ $(document).ready(function () {
     };
     
     var img = new Image();
-    img.src = 'path/to/image.jpg';
+    img.src = 'pokemon.PNG';
     
     var keysDown = {};
     

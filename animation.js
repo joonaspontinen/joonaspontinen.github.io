@@ -65,11 +65,17 @@ $(document).ready(function () {
                 
     if (this.suunta1) {
         enemy.x += 20;
-        enemy.y += 20;
+        if (enemy.x > 380) {
+            this.suunta1 = false;
+            this.suunta2 = true;
+            }
     }
     if (this.suunta2) {
         enemy.x -= 20;
-        enemy.y -= 20;
+        if (enemy.x < 20) {
+            this.suunta1 = true;
+            this.suunta2 = false;
+            }
     }
     }
     window.addEventListener('keydown', function (e) {
@@ -103,9 +109,11 @@ $(document).ready(function () {
     function update() {
         if (38 in keysDown) {
             movePlayer('up');
+            
         }
         if (40 in keysDown) {
             movePlayer('down');
+            
         }
         if (37 in keysDown) {
             movePlayer('left');
@@ -113,6 +121,7 @@ $(document).ready(function () {
         if (39 in keysDown) {
             movePlayer('right');
         }
+        moveEnemy(enemy);
     }
     
     function main() {

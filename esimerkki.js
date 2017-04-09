@@ -34,7 +34,7 @@ var hero = {
 	speed: 256 // movement in pixels per second
 };
 var monster = {
-    speed: 3,
+    speed: 2,
     suunta1: true,
     suunta2: false
 };
@@ -104,7 +104,18 @@ var update = function (modifier) {
 		&& monster.y <= (hero.y + 20)
 	) {
 
-		reset();
+		if (target.suunta1) {
+        
+            target.suunta1 = false;
+            target.suunta2 = true;
+            
+    }
+    if (target.suunta2) {
+            target.suunta1 = true;
+            target.suunta2 = false;
+            
+    }
+        
 	}
 };
 

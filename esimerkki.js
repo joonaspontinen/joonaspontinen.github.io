@@ -60,13 +60,13 @@ var monster = {
 // Handle keyboard controls
 var keysDown = {};
 
-addEventListener("keydown", function (e) {
-	keysDown[e.keyCode] = true;
-}, false);
-
-addEventListener("keyup", function (e) {
-	delete keysDown[e.keyCode];
-}, false);
+window.addEventListener('keydown', function (e) {
+        keysDown[e.keyCode] = true;
+    });
+    
+    window.addEventListener('keyup', function (e) {
+        delete keysDown[e.keyCode];
+    });
 
 // Reset the game when the player catches a monster
 var reset = function () {

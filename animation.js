@@ -6,6 +6,8 @@ $(document).ready(function () {
     canvas.height = 400;
     document.body.appendChild(canvas);
     
+    var a = 20;
+    
     var player = {
         x: 200,
         y: 200,
@@ -20,11 +22,29 @@ $(document).ready(function () {
 		y: 130,
         w: 40,
         h: 40,
-        speed: 10,
+        speed: 3,
 		suunta1: true,
 		suunta2: false
 
     };
+    
+    var newEnemy = {
+		x: a,
+		y: a,
+        w: 40,
+        h: 40,
+        speed: 3,
+		suunta1: true,
+		suunta2: false
+
+    };
+    
+    var enemies = [enemy];
+    
+    function createEnemy() {
+        enemies.push(newEnemy);
+        a += 20;
+    }
     
     var img = new Image();
     img.src = 'pokemon.PNG';
@@ -92,18 +112,20 @@ $(document).ready(function () {
         context.drawImage(img, x, y);
     }
         
-    function drawEnemy(context) {
-        var x = enemy.x - (enemy.w / 2);
-        var y = enemy.y - (enemy.h / 2);
+    function drawEnemy(context, vihu) {
+    
+        var x = vihu.x - (vihu.w / 2);
+        var y = vihu.y - (vihu.h / 2);
         context.drawImage(img, x, y);
-    }    
+        
+    }
     
     var render = function () {
             ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);
-            drawEnemy(ctx)
+            enemies.forEach((b) - > drawEnemy(ctx,b);
         };
     
     function update() {
@@ -121,7 +143,7 @@ $(document).ready(function () {
         if (39 in keysDown) {
             movePlayer('right');
         }
-        moveEnemy(enemy);
+        enemies.forEach((b) - > moveEnemy(b);
     }
     
     function main() {

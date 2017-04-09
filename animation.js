@@ -19,7 +19,7 @@ $(document).ready(function () {
     img.src = 'pokemon.PNG';
     
     var bg = new Image();
-    img.src = 'pelibg.jpg';
+    img.src = 'peli.jpg';
     
     var keysDown = {};
     
@@ -68,7 +68,7 @@ $(document).ready(function () {
     }
     
     var render = function () {
-            
+            ctx.fillStyle = '#000000';
             ctx.drawImage(bg, 0, 0);
     
             drawPlayer(ctx);

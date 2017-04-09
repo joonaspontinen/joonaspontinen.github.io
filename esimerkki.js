@@ -34,7 +34,9 @@ var hero = {
 	speed: 256 // movement in pixels per second
 };
 var monster = {
-    speed: 3
+    speed: 3,
+    suunta1: true,
+    suunta2: false
 };
 
  function moveEnemy(target) {

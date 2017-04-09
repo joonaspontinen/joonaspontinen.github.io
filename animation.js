@@ -121,7 +121,7 @@ $(document).ready(function () {
     }
     
     var render = function () {
-            ctx.fillStyle = '#000000';
+            ctx.fillStyle = '#FF0000';
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);

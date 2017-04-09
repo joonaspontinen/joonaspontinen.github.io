@@ -34,7 +34,6 @@ var hero = {
 	speed: 10
 };
 var monster = {
-    speed: 0.1,
     suunta1: true,
     suunta2: false
 };
@@ -42,14 +41,14 @@ var monster = {
  function moveEnemy(target) {
                 
     if (target.suunta1) {
-        target.x += 20;
+        target.x += 10;
         if (target.x > 380) {
             target.suunta1 = false;
             target.suunta2 = true;
             }
     }
     if (target.suunta2) {
-        target.x -= 20;
+        target.x -= 10;
         if (target.x < 20) {
             target.suunta1 = true;
             target.suunta2 = false;

@@ -103,9 +103,7 @@ var update = function (modifier) {
             monster.suunta1 = true;
             monster.suunta2 = false;
             
-    }
-
-		if (monster.suunta1) {
+    }  else {
         
             monster.suunta1 = false;
             monster.suunta2 = true;

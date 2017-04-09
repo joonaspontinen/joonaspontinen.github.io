@@ -33,7 +33,7 @@ $(document).ready(function () {
     var enemies = Array;
     
     function createEnemy() {
-        enemies.add;
+        enemies.add(newEnemy);
         a += 20;
     }
     createEnemy();
@@ -76,15 +76,15 @@ $(document).ready(function () {
     function moveEnemy(target) {
                 
     if (target.suunta1) {
-        enemy.x += 20;
-        if (enemy.x > 380) {
+        target.x += 20;
+        if (target.x > 380) {
             target.suunta1 = false;
             target.suunta2 = true;
             }
     }
     if (target.suunta2) {
-        enemy.x -= 20;
-        if (enemy.x < 20) {
+        target.x -= 20;
+        if (target.x < 20) {
             target.suunta1 = true;
             target.suunta2 = false;
             }

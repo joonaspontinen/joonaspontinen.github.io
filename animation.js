@@ -30,10 +30,10 @@ $(document).ready(function () {
 
     };
     
-    ArrayList < newEnemy > enemies = new ArrayList()<newEnemy>();
+    ArrayList < newEnemy > enemies = new ArrayList() < newEnemy > ();
     
     function createEnemy() {
-        enemies.add(newEnemy);
+        enemies.append(newEnemy);
         a += 20;
     }
     createEnemy();

@@ -71,7 +71,7 @@ $(document).ready(function () {
         enemy.x -= 20;
         enemy.y -= 20;
     }
-    
+    }
     window.addEventListener('keydown', function (e) {
         keysDown[e.keyCode] = true;
     });
@@ -97,7 +97,7 @@ $(document).ready(function () {
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);
-            drawEnemy(ctx);
+            drawEnemy(ctx)
         };
     
     function update() {
@@ -121,4 +121,4 @@ $(document).ready(function () {
         requestAnimationFrame(main);
     }
     main();
-};
+});

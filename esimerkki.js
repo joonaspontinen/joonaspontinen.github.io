@@ -34,7 +34,7 @@ var hero = {
 	speed: 10
 };
 var monster = {
-    speed: 0.5,
+    speed: 0.1,
     suunta1: true,
     suunta2: false
 };

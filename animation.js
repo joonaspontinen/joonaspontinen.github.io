@@ -17,16 +17,7 @@ $(document).ready(function () {
        
     };
     
-    var enemy = {
-		x: 130,
-		y: 130,
-        w: 40,
-        h: 40,
-        speed: 3,
-		suunta1: true,
-		suunta2: false
-
-    };
+    
     
     var newEnemy = {
 		x: a,
@@ -39,12 +30,13 @@ $(document).ready(function () {
 
     };
     
-    var enemies = [enemy];
+    var enemies = Array;
     
     function createEnemy() {
         enemies.push(newEnemy);
         a += 20;
     }
+    createEnemy();
     
     var img = new Image();
     img.src = 'pokemon.PNG';
@@ -125,9 +117,7 @@ $(document).ready(function () {
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);
-            for(enemy b : enemies){
-                drawEnemy(ctx,b);
-            } ;
+            enemies.forEach(drawEnemy(ctx, this));
         };
     
     function update() {
@@ -145,9 +135,7 @@ $(document).ready(function () {
         if (39 in keysDown) {
             movePlayer('right');
         }
-         for(enemy b : enemies){
-                moveEnemy(b);
-            } ;
+         enemies.forEach(moveEnemy(this));
     }
     
     function main() {

@@ -80,28 +80,28 @@ var reset = function () {
  function movePlayer(direction) {
         switch (direction) {
         case "left":
-            player.x -= player.speed;
-            if (player.x < 20) {
-                player.x = 20;
+            hero.x -= hero.speed;
+            if (hero.x < 20) {
+                hero.x = 20;
             }
             break;
         case "right":
-            player.x += player.speed;
-            if (player.x > 380) {
-                player.x = 380;
+            hero.x += hero.speed;
+            if (hero.x > 380) {
+                hero.x = 380;
             }
             break;
         case "up":
-            player.y -= player.speed;
-            if (player.y < 20) {
-                player.y = 20;
+            hero.y -= hero.speed;
+            if (hero.y < 20) {
+                hero.y = 20;
             }
                 
             break;
         case "down":
-            player.y += player.speed;
-            if (player.y > 380) {
-                player.y = 380;
+            hero.y += hero.speed;
+            if (hero.y > 380) {
+                hero.y = 380;
             }
             break;
         }

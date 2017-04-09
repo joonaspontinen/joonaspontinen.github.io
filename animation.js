@@ -1,6 +1,6 @@
 $(document).ready(function () {
     'use strict';
-    var canvas = document.createElement('canvas');
+    var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     canvas.width = 400;
     canvas.height = 400;
@@ -84,10 +84,10 @@ $(document).ready(function () {
         }
     }
     
-    function main(){
+    function main() {
         update();
         render();
         requestAnimationFrame(main);
     }
     main();
-                      });
+});

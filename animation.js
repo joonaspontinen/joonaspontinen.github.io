@@ -125,7 +125,9 @@ $(document).ready(function () {
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);
-            enemies.forEach((b) - > drawEnemy(ctx,b);
+            for(enemy b : enemies){
+                drawEnemy(ctx,b);
+            } ;
         };
     
     function update() {
@@ -143,7 +145,9 @@ $(document).ready(function () {
         if (39 in keysDown) {
             movePlayer('right');
         }
-        enemies.forEach((b) - > moveEnemy(b);
+         for(enemy b : enemies){
+                moveEnemy(b);
+            } ;
     }
     
     function main() {

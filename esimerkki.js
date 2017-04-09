@@ -37,6 +37,23 @@ var monster = {
     speed: 3
 };
 
+ function moveEnemy(target) {
+                
+    if (target.suunta1) {
+        target.x += 20;
+        if (target.x > 380) {
+            target.suunta1 = false;
+            target.suunta2 = true;
+            }
+    }
+    if (target.suunta2) {
+        target.x -= 20;
+        if (target.x < 20) {
+            target.suunta1 = true;
+            target.suunta2 = false;
+            }
+    }
+    }
 
 // Handle keyboard controls
 var keysDown = {};
@@ -62,7 +79,8 @@ var reset = function () {
 // Update game objects
 var update = function (modifier) {
     
-    moveEnemy(monster)
+    moveEnemy(monster);
+    
 	if (38 in keysDown) { // Player holding up
 		hero.y -= hero.speed * modifier;
 	}
@@ -126,22 +144,6 @@ requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 // Let's play this game!
 var then = Date.now();
 
- function moveEnemy(target) {
-                
-    if (target.suunta1) {
-        target.x += 20;
-        if (target.x > 380) {
-            target.suunta1 = false;
-            target.suunta2 = true;
-            }
-    }
-    if (target.suunta2) {
-        target.x -= 20;
-        if (target.x < 20) {
-            target.suunta1 = true;
-            target.suunta2 = false;
-            }
-    }
-    }
+
 reset();
 main();

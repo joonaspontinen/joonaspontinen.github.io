@@ -15,6 +15,17 @@ $(document).ready(function () {
        
     };
     
+    var enemy = {
+		x: 130,
+		y: 130,
+        w: 40,
+        h: 40,
+        speed: 10,
+		suunta1: true,
+		suunta2: false
+
+    };
+    
     var img = new Image();
     img.src = 'pokemon.PNG';
     
@@ -50,6 +61,17 @@ $(document).ready(function () {
         }
     }
     
+    function moveEnemy(enemy) {
+                
+    if (this.suunta1) {
+        enemy.x += 20;
+        enemy.y += 20;
+    }
+    if (this.suunta2) {
+        enemy.x -= 20;
+        enemy.y -= 20;
+    }
+    
     window.addEventListener('keydown', function (e) {
         keysDown[e.keyCode] = true;
     });
@@ -63,12 +85,19 @@ $(document).ready(function () {
         var y = player.y - (player.h / 2);
         context.drawImage(img, x, y);
     }
+        
+    function drawEnemy(context) {
+        var x = enemy.x - (enemy.w / 2);
+        var y = enemy.y - (enemy.h / 2);
+        context.drawImage(img, x, y);
+    }    
     
     var render = function () {
             ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, 400, 400);
     
             drawPlayer(ctx);
+            drawEnemy(ctx);
         };
     
     function update() {

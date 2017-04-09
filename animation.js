@@ -19,8 +19,7 @@ $(document).ready(function () {
     img.src = 'pokemon.PNG';
     
     var bg = new Image();
-    img.src = 'peli.jpg';
-    
+    img.src = 'pelibg.jpg';
     var keysDown = {};
     
     function movePlayer(direction) {

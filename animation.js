@@ -12,7 +12,11 @@ $(document).ready(function () {
         w: 40,
         h: 40,
         speed: 10
+       
     };
+    
+    var img = new Image();
+    img.src = 'path/to/image.jpg';
     
     var keysDown = {};
     
@@ -57,9 +61,7 @@ $(document).ready(function () {
     function drawPlayer(context) {
         var x = player.x - (player.w / 2);
         var y = player.y - (player.h / 2);
-        var pelaaja = new Image();
-        pelaaja.src = "pokemon.png";
-        context.drawImage(pelaaja, x, y);
+        context.drawImage(img, x, y);
     }
     
     var render = function () {

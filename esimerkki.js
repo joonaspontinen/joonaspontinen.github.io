@@ -170,18 +170,19 @@ var render = function () {
 
 };
 
-function getCursorPosition(ctx, onclick) {
+
+    
+    
+}
+    
+
+ctx.attachEvent('onclick', function() {
     var rect = canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
     
     if ((x <=(hero.x+20) && x> (hero.x - 20) && y <= (hero.y + 20)y>(hero.y-20))){
-        monsterReady = false;
-    }
-}
-    
-
-ctx.attachEvent('onclick', function() {} );
+        monsterReady = false;} });
 
 // The main game loop
 var main = function () {

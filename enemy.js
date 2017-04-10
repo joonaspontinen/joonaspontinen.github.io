@@ -4,7 +4,7 @@ monsterImage.onload = function () {
     'use strict';
 	monsterReady = true;
 };
-monsterImage.src = "pokemon.PNG";
+monsterImage.src = "enemy.png";
 
 
 var monster = {

@@ -13,8 +13,10 @@ var hero = {
 function changeSpeed(positive) {
     if(positive)
     {hero.speed =+ 10;
+     console.log("toimii")
 }else{
     hero.speed -= 10;
+    console.log("nope")
 }
 
 function movePlayer(direction) {

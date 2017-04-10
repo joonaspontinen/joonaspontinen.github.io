@@ -40,6 +40,14 @@ var update = function (modifier) {
     'use strict';
     moveEnemy(monster);
     
+    if (65 in keysDown) {
+        changeSpeed(true);
+    }
+    
+    if (83 in keysDown) {
+        changeSpeed(false);
+    }
+    
     if (38 in keysDown) {
         movePlayer('up');
             

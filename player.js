@@ -10,6 +10,13 @@ var hero = {
 	speed: 10
 };
 
+function changeSpeed(positive) {
+    if(positive)
+    {hero.speed =+ 10;
+}else{
+    hero.speed -= 10;
+}
+
 function movePlayer(direction) {
     'use strict';
     switch (direction) {

@@ -1,45 +1,33 @@
-var enemy = {
-		x: 130,
-		y: 130,
-        w: 40,
-        h: 40,
-        speed: 10,
-		suunta1: true,
-		suunta2: false
-
-    };
+var monsterReady = false;
+var monsterImage = new Image();
+monsterImage.onload = function () {
+    'use strict';
+	monsterReady = true;
+};
+monsterImage.src = "pokemon.PNG";
 
 
+var monster = {
+    suunta1: true,
+    suunta2: false
+};
 
-
-
-function moveEnemy(enemy) {
-                
-    if (this.suunta1) {
-        enemy.x += 20;
-        enemy.y += 20;
+function moveEnemy(target) {
+    'use strict';
+    if (target.suunta1) {
+        target.x += 10;
+        if (target.x > 380) {
+            target.suunta1 = false;
+            target.suunta2 = true;
+        }
     }
-    if (this.suunta2) {
-        enemy.x -= 20;
-        enemy.y -= 20;
+    if (target.suunta2) {
+        target.x -= 10;
+        if (target.x < 20) {
+            target.suunta1 = true;
+            target.suunta2 = false;
+        }
+        
     }
-
-
-													// suunnanmuuttos
 }
-
-function create() {
-                
-    var newEnemy = new enemy;
-    newEnemy.x = rand.nextInt((380+1) - 20) + 20;							// satunnaisuus
-    newEnemy.y = rand.nextInt((380+1) - 20) + 20;							// satunnaisuus
-    enemies += newEnemy;  
-    }
-
-function move{
-                
-          for (enemies) {
-    			moveEnemy(this);
-			}
-    }
 

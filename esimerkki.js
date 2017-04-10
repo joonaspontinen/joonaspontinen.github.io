@@ -176,12 +176,12 @@ var render = function () {
 
     
 
-ctx.attachEvent('onclick', function() {
+document.getElementById("canvas").addEventListener("onclick", function () {
     var rect = canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
     
-    if ((x <=(hero.x+20) && x> (hero.x - 20) && y <= (hero.y + 20)&&y>(hero.y-20))){
+    if ((x <=(hero.x+20) && x > (hero.x - 20) && y <= (hero.y + 20) && y > (hero.y - 20))){
         monsterReady = false;} });
 
 // The main game loop

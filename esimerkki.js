@@ -181,7 +181,7 @@ ctx.attachEvent('onclick', function() {
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
     
-    if ((x <=(hero.x+20) && x> (hero.x - 20) && y <= (hero.y + 20)y>(hero.y-20))){
+    if ((x <=(hero.x+20) && x> (hero.x - 20) && y <= (hero.y + 20)&&y>(hero.y-20))){
         monsterReady = false;} });
 
 // The main game loop

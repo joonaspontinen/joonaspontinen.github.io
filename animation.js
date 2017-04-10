@@ -32,13 +32,13 @@ var reset = function () {
 	hero.y = canvas.height / 2;
 
 	
-	monster.x = 32 + (Math.random() * (canvas.width - 64));
-	monster.y = 32 + (Math.random() * (canvas.height - 64));
+	enemy.x = 32 + (Math.random() * (canvas.width - 64));
+	enemy.y = 32 + (Math.random() * (canvas.height - 64));
 };
 
 var update = function (modifier) {
     'use strict';
-    moveEnemy(monster);
+    moveEnemy(enemy);
     
     if (65 in keysDown) {
         changeSpeed(true);
@@ -63,16 +63,16 @@ var update = function (modifier) {
         movePlayer('right');
     }
     
-	if (monster.x <= (hero.x + 20) && monster.x > (hero.x - 20) && monster.y <= (hero.y + 20) && monster.y > (hero.y - 20))
+	if (enemy.x <= (hero.x + 20) && enemy.x > (hero.x - 20) && enemy.y <= (hero.y + 20) && enemy.y > (hero.y - 20))
 		 {
-             if (monster.suunta2) {
-            monster.suunta1 = true;
-            monster.suunta2 = false;
+             if (enemy.suunta2) {
+            enemy.suunta1 = true;
+            enemy.suunta2 = false;
             
     }  else {
         
-            monster.suunta1 = false;
-            monster.suunta2 = true;
+            enemy.suunta1 = false;
+            enemy.suunta2 = true;
             
     }
     
@@ -89,8 +89,8 @@ var render = function () {
 		ctx.drawImage(heroImage, (hero.x - 20), (hero.y - 20));
 	}
 
-	if (monsterReady) {
-		ctx.drawImage(monsterImage, (monster.x - 20), (monster.y - 20));
+	if (enemyReady) {
+		ctx.drawImage(enemyImage, (enemy.x - 20), (enemy.y - 20));
 	}
 
 

@@ -1,13 +1,13 @@
-var monsterReady = false;
-var monsterImage = new Image();
-monsterImage.onload = function () {
+var enemyReady = false;
+var enemyImage = new Image();
+enemyImage.onload = function () {
     'use strict';
-	monsterReady = true;
+	enemyReady = true;
 };
-monsterImage.src = "enemy.png";
+enemyImage.src = "enemy.png";
 
 
-var monster = {
+var enemy = {
     suunta1: true,
     suunta2: false
 };

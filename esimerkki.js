@@ -9,6 +9,7 @@ document.body.appendChild(canvas);
 var bgReady = false;
 var bgImage = new Image();
 bgImage.onload = function () {
+    'use strict';
 	bgReady = true;
 };
 bgImage.src = "pelibg.jpg";
@@ -17,6 +18,7 @@ bgImage.src = "pelibg.jpg";
 var heroReady = false;
 var heroImage = new Image();
 heroImage.onload = function () {
+    'use strict';
 	heroReady = true;
 };
 heroImage.src = "pokemon.PNG";
@@ -25,6 +27,7 @@ heroImage.src = "pokemon.PNG";
 var monsterReady = false;
 var monsterImage = new Image();
 monsterImage.onload = function () {
+    'use strict';
 	monsterReady = true;
 };
 monsterImage.src = "pokemon.PNG";
@@ -39,7 +42,7 @@ var monster = {
 };
 
  function moveEnemy(target) {
-                
+    'use strict';
     if (target.suunta1) {
         target.x += 10;
         if (target.x > 380) {
@@ -53,6 +56,7 @@ var monster = {
             target.suunta1 = true;
             target.suunta2 = false;
             }
+        
     }
     }
 
@@ -60,15 +64,18 @@ var monster = {
 var keysDown = {};
 
 window.addEventListener('keydown', function (e) {
+    'use strict';
         keysDown[e.keyCode] = true;
     });
     
     window.addEventListener('keyup', function (e) {
+    'use strict';
         delete keysDown[e.keyCode];
     });
 
 // Reset the game when the player catches a monster
 var reset = function () {
+    'use strict';
 	hero.x = canvas.width / 2;
 	hero.y = canvas.height / 2;
 
@@ -77,6 +84,7 @@ var reset = function () {
 	monster.y = 32 + (Math.random() * (canvas.height - 64));
 };
  function movePlayer(direction) {
+    'use strict';
         switch (direction) {
         case "left":
             hero.x -= hero.speed;
@@ -108,7 +116,7 @@ var reset = function () {
 
 // Update game objects
 var update = function (modifier) {
-    
+    'use strict';
     moveEnemy(monster);
     
      if (38 in keysDown) {
@@ -161,6 +169,19 @@ var render = function () {
 
 
 };
+
+function getCursorPosition(ctx, onclick) {
+    var rect = canvas.getBoundingClientRect();
+    var x = event.clientX - rect.left;
+    var y = event.clientY - rect.top;
+    
+    if ((x <=(hero.x+20) && x> (hero.x - 20) && y <= (hero.y + 20)y>(hero.y-20))){
+        monsterReady = false;
+    }
+}
+    
+
+ctx.attachEvent('onclick', function() {} );
 
 // The main game loop
 var main = function () {

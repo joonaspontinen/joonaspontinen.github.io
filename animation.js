@@ -125,6 +125,7 @@ var click = function (X, Y) {
        enemyReady = false;
 
 }
+}
 
 canvas.addEventListener("mousedown", function(e){
      click(getMousePos(canvas,e).x, getMousePos(canvas,e).y);

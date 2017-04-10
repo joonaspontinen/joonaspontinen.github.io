@@ -112,6 +112,24 @@ requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 
 var then = Date.now();
 
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+}
+
+var click = function (X, Y) {
+    if (X >= enemy.x  && X <= enemy.x + 20 && Y <= enemy.y + 20) {
+       enemyReady = false;
+
+}
+
+canvas.addEventListener("mousedown", function(e){
+     click(getMousePos(canvas,e).x, getMousePos(canvas,e).y);
+  });
+
 
 reset();
 main();

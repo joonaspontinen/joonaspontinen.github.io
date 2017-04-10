@@ -173,7 +173,7 @@ var render = function () {
 
     
     
-}
+
     
 
 ctx.attachEvent('onclick', function() {

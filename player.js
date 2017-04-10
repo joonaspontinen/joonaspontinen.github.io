@@ -18,7 +18,7 @@ function changeSpeed(positive) {
     hero.speed -= 10;
     console.log("nope")
 }
-
+}
 function movePlayer(direction) {
     'use strict';
     switch (direction) {

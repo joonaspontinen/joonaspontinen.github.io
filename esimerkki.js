@@ -1,5 +1,5 @@
 // Create the canvas
-var canvas = document.getElementById("myCanvas");
+var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 400;
 canvas.height = 400;
@@ -176,7 +176,7 @@ var render = function () {
 
     
 
-document.getElementById("canvas").addEventListener("onclick", function () {
+canvas.addEventListener("onclick", function () {
     var rect = canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;

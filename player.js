@@ -12,10 +12,10 @@ var hero = {
 
 function changeSpeed(positive) {
     if(positive)
-    {hero.speed =+ 10;
+    {hero.speed = (1.1 * hero.speed);
      console.log("toimii")
 }else{
-    hero.speed -= 10;
+    hero.speed = (0.9 * hero.speed);
     console.log("nope")
 }
 }

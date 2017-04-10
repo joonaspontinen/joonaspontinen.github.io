@@ -65,7 +65,7 @@ var update = function (modifier) {
     
 	if (enemy.x <= (hero.x + 20) && enemy.x > (hero.x - 20) && enemy.y <= (hero.y + 20) && enemy.y > (hero.y - 20))
 		 {
-             if (enemy.suunta2) {
+            if (enemy.suunta2) {
             enemy.suunta1 = true;
             enemy.suunta2 = false;
             
@@ -125,11 +125,11 @@ var click = function (X, Y) {
        enemyReady = false;
 
 }
-}
+};
 
-canvas.addEventListener("mousedown", function(e){
-     click(getMousePos(canvas,e).x, getMousePos(canvas,e).y);
-  });
+canvas.addEventListener("mousedown", function (e) {
+    click(getMousePos(canvas, e).x, getMousePos(canvas, e).y);
+});
 
 
 reset();

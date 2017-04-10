@@ -41,37 +41,37 @@ var monster = {
     suunta2: false
 };
 
- function moveEnemy(target) {
+function moveEnemy(target) {
     'use strict';
     if (target.suunta1) {
         target.x += 10;
         if (target.x > 380) {
             target.suunta1 = false;
             target.suunta2 = true;
-            }
+        }
     }
     if (target.suunta2) {
         target.x -= 10;
         if (target.x < 20) {
             target.suunta1 = true;
             target.suunta2 = false;
-            }
+        }
         
     }
-    }
+}
 
 // Handle keyboard controls
 var keysDown = {};
 
 window.addEventListener('keydown', function (e) {
     'use strict';
-        keysDown[e.keyCode] = true;
-    });
+    keysDown[e.keyCode] = true;
+});
     
-    window.addEventListener('keyup', function (e) {
+window.addEventListener('keyup', function (e) {
     'use strict';
-        delete keysDown[e.keyCode];
-    });
+    delete keysDown[e.keyCode];
+});
 
 // Reset the game when the player catches a monster
 var reset = function () {
@@ -83,60 +83,60 @@ var reset = function () {
 	monster.x = 32 + (Math.random() * (canvas.width - 64));
 	monster.y = 32 + (Math.random() * (canvas.height - 64));
 };
- function movePlayer(direction) {
+function movePlayer(direction) {
     'use strict';
-        switch (direction) {
-        case "left":
-            hero.x -= hero.speed;
-            if (hero.x < 20) {
-                hero.x = 20;
-            }
-            break;
-        case "right":
-            hero.x += hero.speed;
-            if (hero.x > 380) {
-                hero.x = 380;
-            }
-            break;
-        case "up":
-            hero.y -= hero.speed;
-            if (hero.y < 20) {
-                hero.y = 20;
-            }
-                
-            break;
-        case "down":
-            hero.y += hero.speed;
-            if (hero.y > 380) {
-                hero.y = 380;
-            }
-            break;
+    switch (direction) {
+    case "left":
+        hero.x -= hero.speed;
+        if (hero.x < 20) {
+            hero.x = 20;
         }
+        break;
+    case "right":
+        hero.x += hero.speed;
+        if (hero.x > 380) {
+            hero.x = 380;
+        }
+        break;
+    case "up":
+        hero.y -= hero.speed;
+        if (hero.y < 20) {
+            hero.y = 20;
+        }
+                
+        break;
+    case "down":
+        hero.y += hero.speed;
+        if (hero.y > 380) {
+            hero.y = 380;
+        }
+        break;
     }
+}
 
 // Update game objects
 var update = function (modifier) {
     'use strict';
     moveEnemy(monster);
     
-     if (38 in keysDown) {
-            movePlayer('up');
+    if (38 in keysDown) {
+        movePlayer('up');
             
-        }
-        if (40 in keysDown) {
-            movePlayer('down');
+    }
+    if (40 in keysDown) {
+        movePlayer('down');
             
-        }
-        if (37 in keysDown) {
-            movePlayer('left');
-        }
-        if (39 in keysDown) {
-            movePlayer('right');
-        }
+    }
+    if (37 in keysDown) {
+        movePlayer('left');
+    }
+    if (39 in keysDown) {
+        movePlayer('right');
+    }
 	
 
 	// Are they touching?
-	if (monster.x <=(hero.x+20) && monster.x> (hero.x - 20) && monster.y <= (hero.y + 20)&&monster.y>(hero.y-20))
+	if (monster.x <= (hero.x + 20) && monster.x > (hero.x - 20) && monster.y <= (hero.y + 20) && monster.y > (hero.y - 20))
 		 {
              if (monster.suunta2) {
             monster.suunta1 = true;
